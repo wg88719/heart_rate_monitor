@@ -15,9 +15,9 @@ fl = 5; fh = 15; %cut off frequencies of the filter
 N = 3; %order fo the filter
 Wn = (2/fs)*[fl fh]; %normalized frequency with respect to sampling frequency 
 [b,a] = butter(N,Wn); %butterworth bandpass filter
-%z1 = zeros(1,max(length(1),length(b))-1); %initial conditions
 %[ECG_b z2]= filter(b,a,ECG,z1); %apply filter
-ECG_b = filtfilt(b,a,ECG); %apply zero-phase forward and reverse IIR filter
+%ECG_b = filtfilt(b,a,ECG); %apply zero-phase forward and reverse IIR filter
+ECG_b = ECG;
 
 subplot(5,1,2), plot(ECG_b), axis tight
 title('Bandpass filter output')
@@ -111,6 +111,7 @@ for i = 1 : length(PEAKI) %search throughout all the peaks
 
                 RR1(rr1) = QRSI_loc(ii-1) - QRSI_loc(ii-2);% the current QRS - the previous one
                 RRave1 = (1/length(RR1)) * sum(RR1);
+                RR(ii-1) = RR1(rr1);
 
                 if (length(RR1) < 2) %if only one RR interval so far 
                         %initialize the limits
@@ -151,16 +152,19 @@ hold on, plot(PEAKI_loc,threshold2,'--m'),
 
 %save variable ECG_i into an ascii file in double (16 bits) format delimited by tabs
 %so that it can be compared with the RTL implementations
-save('ECGI','ECG_i','-ascii','-double','-tabs')
+save('ECGI','ECG_i','-ascii','-double','-tabs');
 
 %tell the heart rate
-fprintf('The average1 heart period is: %d s\n', RRave1/fs)
-fprintf('The average heart rate is: %d beats per second\n', fs/RRave1)
+fprintf('The last average1 heart period is: %d s\n', RRave1/fs)
+fprintf('The last average heart rate is: %d beats per second\n', fs/RRave1)
 
-if (RRave1 == RRave2)
-        fprintf('The heart rate is regular\n')
-else
-        fprintf('The heart rate is irregular\n')
-end
+%figure(2),
+%histogram(RR./fs)%,'DisplayStyle','bar'))
+
+%if (RRave1 == RRave2)
+%        fprintf('The heart rate is regular\n')
+%else
+%        fprintf('The heart rate is irregular\n')
+%end
 
 
