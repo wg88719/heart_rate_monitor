@@ -31,6 +31,7 @@ a = [1];
 ECG_i = filter(b,a,ECG_d);
 %
 subplot(4,1,3), plot(ECG_i), axis tight
+title('integrator outout')
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%SQUARING
 ECG_s = ECG_i.^2;
@@ -61,4 +62,8 @@ fclose(fid_d);
 
 fid_d=fopen('../../data/Xecg_diff.dat','w');
 fprintf(fid_d,' %x\n',ECG_d);
+fclose(fid_d);
+
+fid_i=fopen('../../data/ecg_int.dat','w');
+fprintf(fid_i,' %d\n',ECG_i);
 fclose(fid_d);
