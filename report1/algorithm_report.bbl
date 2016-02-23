@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{rivas}
+Raquel Gutiérrez-Rivas, Jesùs Garcìa, William~P. Marnane, and Alvaro
+  Hernàndez.
+\newblock Novel real-time low-complexity qrs complex detector based on adaptive
+  thresholding.
+\newblock {\em IEEE Sensors Journal}, 15(10):6036--6043, October 2015.
+
+\bibitem{principles}
+Bert-Uwe Kohler and Carsten Hennig.
+\newblock The principles of software qrs detection.
+\newblock {\em IEEE Engineering in Medicine and Biology}, 2002.
+
+\bibitem{pan}
+Jiapu Pan and Willis~J. Tompkins.
+\newblock A real-time qrs detection algorithm.
+\newblock {\em IEEE Transactions on Biomedical Engineering},
+  BME-32(3):230--236, March 1985.
+
+\bibitem{hooman}
+Hooman Sedghamiz.
+\newblock Complete pan tompkins implementation ecg qrs detector, March 2014.
+
+\end{thebibliography}

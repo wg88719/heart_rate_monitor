@@ -1,9 +1,10 @@
 close all, clc, clear all
 %load('ECG_sample_noisy.mat')
 %ECG = ECG1;
-load('../data/mit-bih/101m.mat')
+load('../../data/mit-bih/101m.mat')
 fs=360;
-ECG = val(1,:); %get input vector from loaded data
+%only 30 secs
+ECG = val(1,1:length(val)/2); %get input vector from loaded data
 
 figure(1), 
 subplot(5,1,1), plot(ECG), axis tight
@@ -16,8 +17,7 @@ N = 3; %order fo the filter
 Wn = (2/fs)*[fl fh]; %normalized frequency with respect to sampling frequency 
 [b,a] = butter(N,Wn); %butterworth bandpass filter
 %[ECG_b z2]= filter(b,a,ECG,z1); %apply filter
-%ECG_b = filtfilt(b,a,ECG); %apply zero-phase forward and reverse IIR filter
-ECG_b = ECG;
+ECG_b = filtfilt(b,a,ECG); %apply zero-phase forward and reverse IIR filter
 
 subplot(5,1,2), plot(ECG_b), axis tight
 title('Bandpass filter output')
