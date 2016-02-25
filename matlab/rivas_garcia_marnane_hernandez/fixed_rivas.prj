@@ -1,0 +1,1196 @@
+<deployment-project plugin="plugin.coder" plugin-version="R2014b">
+  <configuration file="/home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.prj" location="/home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez" name="fixed_rivas" target="target.coder" target-name="MATLAB Coder">
+    <profile key="profile.mex">
+      <param.BuiltInstrumentedMex />
+      <param.RanInstrumentedMex />
+      <param.WorkingFolder>option.WorkingFolder.Project</param.WorkingFolder>
+      <param.SpecifiedWorkingFolder />
+      <param.BuildFolder>option.BuildFolder.Project</param.BuildFolder>
+      <param.SpecifiedBuildFolder />
+      <param.SearchPaths />
+      <param.ResponsivenessChecks />
+      <param.ExtrinsicCalls />
+      <param.IntegrityChecks />
+      <param.SaturateOnIntegerOverflow />
+      <param.GlobalDataSyncMethod />
+      <param.EnableVariableSizing />
+      <param.DynamicMemoryAllocation />
+      <param.DynamicMemoryAllocationThreshold />
+      <param.StackUsageMax />
+      <param.FilePartitionMethod />
+      <param.GenerateComments />
+      <param.MATLABSourceComments />
+      <param.ReservedNameArray />
+      <param.EnableScreener />
+      <param.EnableDebugging />
+      <param.GenerateReport />
+      <param.LaunchReport />
+      <param.CustomSourceCode />
+      <param.CustomHeaderCode />
+      <param.CustomInitializer />
+      <param.CustomTerminator />
+      <param.CustomInclude />
+      <param.CustomSource />
+      <param.CustomLibrary />
+      <param.PostCodeGenCommand />
+      <param.mex.GenCodeOnly />
+      <param.ConstantFoldingTimeout />
+      <param.RecursionLimit />
+      <param.ReuseLocalVariables />
+      <param.TargetLang />
+      <param.EchoExpressions />
+      <param.EnableAutoExtrinsicCalls />
+      <param.InlineThreshold />
+      <param.InlineThresholdMax />
+      <param.InlineStackLimit />
+      <param.EnableMemcpy />
+      <param.MemcpyThreshold />
+      <param.EnableOpenMP />
+      <param.InitFltsAndDblsToZero />
+      <param.ConstantInputs />
+      <param.UsePreconditions>false</param.UsePreconditions>
+      <param.FeatureFlags />
+      <unset>
+        <param.BuiltInstrumentedMex />
+        <param.RanInstrumentedMex />
+        <param.WorkingFolder />
+        <param.SpecifiedWorkingFolder />
+        <param.BuildFolder />
+        <param.SpecifiedBuildFolder />
+        <param.SearchPaths />
+        <param.ResponsivenessChecks />
+        <param.ExtrinsicCalls />
+        <param.IntegrityChecks />
+        <param.SaturateOnIntegerOverflow />
+        <param.GlobalDataSyncMethod />
+        <param.EnableVariableSizing />
+        <param.DynamicMemoryAllocation />
+        <param.DynamicMemoryAllocationThreshold />
+        <param.StackUsageMax />
+        <param.FilePartitionMethod />
+        <param.GenerateComments />
+        <param.MATLABSourceComments />
+        <param.ReservedNameArray />
+        <param.EnableScreener />
+        <param.EnableDebugging />
+        <param.GenerateReport />
+        <param.LaunchReport />
+        <param.CustomSourceCode />
+        <param.CustomHeaderCode />
+        <param.CustomInitializer />
+        <param.CustomTerminator />
+        <param.CustomInclude />
+        <param.CustomSource />
+        <param.CustomLibrary />
+        <param.PostCodeGenCommand />
+        <param.mex.GenCodeOnly />
+        <param.ConstantFoldingTimeout />
+        <param.RecursionLimit />
+        <param.ReuseLocalVariables />
+        <param.TargetLang />
+        <param.EchoExpressions />
+        <param.EnableAutoExtrinsicCalls />
+        <param.InlineThreshold />
+        <param.InlineThresholdMax />
+        <param.InlineStackLimit />
+        <param.EnableMemcpy />
+        <param.MemcpyThreshold />
+        <param.EnableOpenMP />
+        <param.InitFltsAndDblsToZero />
+        <param.ConstantInputs />
+        <param.UsePreconditions />
+        <param.FeatureFlags />
+      </unset>
+    </profile>
+    <profile key="profile.c">
+      <param.grt.GenCodeOnly />
+      <param.WorkingFolder>option.WorkingFolder.Project</param.WorkingFolder>
+      <param.SpecifiedWorkingFolder />
+      <param.BuildFolder>option.BuildFolder.Project</param.BuildFolder>
+      <param.SpecifiedBuildFolder />
+      <param.SearchPaths />
+      <param.SaturateOnIntegerOverflow />
+      <param.PurelyIntegerCode />
+      <param.SupportNonFinite />
+      <param.EnableVariableSizing />
+      <param.DynamicMemoryAllocation />
+      <param.DynamicMemoryAllocationThreshold />
+      <param.StackUsageMax />
+      <param.MultiInstanceCode />
+      <param.FilePartitionMethod />
+      <param.GenerateComments />
+      <param.CommentStyle />
+      <param.MATLABSourceComments />
+      <param.MATLABFcnDesc />
+      <param.DataTypeReplacement />
+      <param.ConvertIfToSwitch />
+      <param.PreserveExternInFcnDecls />
+      <param.ParenthesesLevel />
+      <param.MaxIdLength />
+      <param.CustomSymbolStrGlobalVar />
+      <param.CustomSymbolStrType />
+      <param.CustomSymbolStrField />
+      <param.CustomSymbolStrFcn />
+      <param.CustomSymbolStrTmpVar />
+      <param.CustomSymbolStrMacro />
+      <param.CustomSymbolStrEMXArray />
+      <param.CustomSymbolStrEMXArrayFcn />
+      <param.ReservedNameArray />
+      <param.EnableScreener />
+      <param.Verbose />
+      <param.GenerateReport />
+      <param.GenerateCodeMetricsReport />
+      <param.GenerateCodeReplacementReport />
+      <param.HighlightPotentialDataTypeIssues />
+      <param.LaunchReport />
+      <param.CustomSourceCode />
+      <param.CustomHeaderCode />
+      <param.CustomInitializer />
+      <param.CustomTerminator />
+      <param.CustomInclude />
+      <param.CustomSource />
+      <param.CustomLibrary />
+      <param.PostCodeGenCommand />
+      <param.TargetLangStandard />
+      <param.CodeReplacementLibrary />
+      <param.DeprecatedCRLFlag />
+      <param.SameHardware />
+      <param.HardwareVendor.Production />
+      <param.HardwareType.Production />
+      <param.HWDeviceType.Production />
+      <var.instance.enabled.Production />
+      <param.HardwareSizeChar.Production />
+      <param.HardwareSizeShort.Production />
+      <param.HardwareSizeInt.Production />
+      <param.HardwareSizeLong.Production />
+      <param.HardwareSizeLongLong.Production />
+      <param.HardwareSizeFloat.Production />
+      <param.HardwareSizeDouble.Production />
+      <param.HardwareSizeWord.Production />
+      <param.HardwareSizePointer.Production />
+      <param.HardwareEndianness.Production />
+      <param.HardwareArithmeticRightShift.Production />
+      <param.HardwareLongLongMode.Production />
+      <param.HardwareAtomicIntegerSize.Production />
+      <param.HardwareAtomicFloatSize.Production />
+      <param.HardwareDivisionRounding.Production />
+      <param.HardwareVendor.Target />
+      <param.HardwareType.Target />
+      <param.HWDeviceType.Target />
+      <var.instance.enabled.Target />
+      <param.HardwareSizeChar.Target />
+      <param.HardwareSizeShort.Target />
+      <param.HardwareSizeInt.Target />
+      <param.HardwareSizeLong.Target />
+      <param.HardwareSizeLongLong.Target />
+      <param.HardwareSizeFloat.Target />
+      <param.HardwareSizeDouble.Target />
+      <param.HardwareSizeWord.Target />
+      <param.HardwareSizePointer.Target />
+      <param.HardwareEndianness.Target />
+      <param.HardwareArithmeticRightShift.Target />
+      <param.HardwareLongLongMode.Target />
+      <param.HardwareAtomicIntegerSize.Target />
+      <param.HardwareAtomicFloatSize.Target />
+      <param.HardwareDivisionRounding.Target />
+      <param.Toolchain />
+      <param.BuildConfiguration />
+      <param.CustomToolchainOptions />
+      <param.CastingMode />
+      <param.IndentStyle />
+      <param.IndentSize />
+      <param.ConstantFoldingTimeout />
+      <param.RecursionLimit />
+      <param.IncludeTerminateFcn />
+      <param.ReuseLocalVariables />
+      <param.TargetLang />
+      <param.CCompilerOptimization />
+      <param.CCompilerCustomOptimizations />
+      <param.GenerateMakefile />
+      <param.BuildToolEnable />
+      <param.MakeCommand />
+      <param.TemplateMakefile />
+      <param.BuildToolConfiguration />
+      <param.EnableAutoExtrinsicCalls />
+      <param.InlineThreshold />
+      <param.InlineThresholdMax />
+      <param.InlineStackLimit />
+      <param.EnableMemcpy />
+      <param.MemcpyThreshold />
+      <param.EnableOpenMP />
+      <param.InitFltsAndDblsToZero />
+      <param.PassStructByReference />
+      <param.UsePreconditions>false</param.UsePreconditions>
+      <param.UseECoderFeatures />
+      <param.FeatureFlags />
+      <unset>
+        <param.grt.GenCodeOnly />
+        <param.WorkingFolder />
+        <param.SpecifiedWorkingFolder />
+        <param.BuildFolder />
+        <param.SpecifiedBuildFolder />
+        <param.SearchPaths />
+        <param.SaturateOnIntegerOverflow />
+        <param.PurelyIntegerCode />
+        <param.SupportNonFinite />
+        <param.EnableVariableSizing />
+        <param.DynamicMemoryAllocation />
+        <param.DynamicMemoryAllocationThreshold />
+        <param.StackUsageMax />
+        <param.MultiInstanceCode />
+        <param.FilePartitionMethod />
+        <param.GenerateComments />
+        <param.CommentStyle />
+        <param.MATLABSourceComments />
+        <param.MATLABFcnDesc />
+        <param.DataTypeReplacement />
+        <param.ConvertIfToSwitch />
+        <param.PreserveExternInFcnDecls />
+        <param.ParenthesesLevel />
+        <param.MaxIdLength />
+        <param.CustomSymbolStrGlobalVar />
+        <param.CustomSymbolStrType />
+        <param.CustomSymbolStrField />
+        <param.CustomSymbolStrFcn />
+        <param.CustomSymbolStrTmpVar />
+        <param.CustomSymbolStrMacro />
+        <param.CustomSymbolStrEMXArray />
+        <param.CustomSymbolStrEMXArrayFcn />
+        <param.ReservedNameArray />
+        <param.EnableScreener />
+        <param.Verbose />
+        <param.GenerateReport />
+        <param.GenerateCodeMetricsReport />
+        <param.GenerateCodeReplacementReport />
+        <param.HighlightPotentialDataTypeIssues />
+        <param.LaunchReport />
+        <param.CustomSourceCode />
+        <param.CustomHeaderCode />
+        <param.CustomInitializer />
+        <param.CustomTerminator />
+        <param.CustomInclude />
+        <param.CustomSource />
+        <param.CustomLibrary />
+        <param.PostCodeGenCommand />
+        <param.TargetLangStandard />
+        <param.CodeReplacementLibrary />
+        <param.DeprecatedCRLFlag />
+        <param.SameHardware />
+        <param.HardwareVendor.Production />
+        <param.HardwareType.Production />
+        <param.HWDeviceType.Production />
+        <var.instance.enabled.Production />
+        <param.HardwareSizeChar.Production />
+        <param.HardwareSizeShort.Production />
+        <param.HardwareSizeInt.Production />
+        <param.HardwareSizeLong.Production />
+        <param.HardwareSizeLongLong.Production />
+        <param.HardwareSizeFloat.Production />
+        <param.HardwareSizeDouble.Production />
+        <param.HardwareSizeWord.Production />
+        <param.HardwareSizePointer.Production />
+        <param.HardwareEndianness.Production />
+        <param.HardwareArithmeticRightShift.Production />
+        <param.HardwareLongLongMode.Production />
+        <param.HardwareAtomicIntegerSize.Production />
+        <param.HardwareAtomicFloatSize.Production />
+        <param.HardwareDivisionRounding.Production />
+        <param.HardwareVendor.Target />
+        <param.HardwareType.Target />
+        <param.HWDeviceType.Target />
+        <var.instance.enabled.Target />
+        <param.HardwareSizeChar.Target />
+        <param.HardwareSizeShort.Target />
+        <param.HardwareSizeInt.Target />
+        <param.HardwareSizeLong.Target />
+        <param.HardwareSizeLongLong.Target />
+        <param.HardwareSizeFloat.Target />
+        <param.HardwareSizeDouble.Target />
+        <param.HardwareSizeWord.Target />
+        <param.HardwareSizePointer.Target />
+        <param.HardwareEndianness.Target />
+        <param.HardwareArithmeticRightShift.Target />
+        <param.HardwareLongLongMode.Target />
+        <param.HardwareAtomicIntegerSize.Target />
+        <param.HardwareAtomicFloatSize.Target />
+        <param.HardwareDivisionRounding.Target />
+        <param.Toolchain />
+        <param.BuildConfiguration />
+        <param.CustomToolchainOptions />
+        <param.CastingMode />
+        <param.IndentStyle />
+        <param.IndentSize />
+        <param.ConstantFoldingTimeout />
+        <param.RecursionLimit />
+        <param.IncludeTerminateFcn />
+        <param.ReuseLocalVariables />
+        <param.TargetLang />
+        <param.CCompilerOptimization />
+        <param.CCompilerCustomOptimizations />
+        <param.GenerateMakefile />
+        <param.BuildToolEnable />
+        <param.MakeCommand />
+        <param.TemplateMakefile />
+        <param.BuildToolConfiguration />
+        <param.EnableAutoExtrinsicCalls />
+        <param.InlineThreshold />
+        <param.InlineThresholdMax />
+        <param.InlineStackLimit />
+        <param.EnableMemcpy />
+        <param.MemcpyThreshold />
+        <param.EnableOpenMP />
+        <param.InitFltsAndDblsToZero />
+        <param.PassStructByReference />
+        <param.UsePreconditions />
+        <param.UseECoderFeatures />
+        <param.FeatureFlags />
+      </unset>
+    </profile>
+    <profile key="profile.hdl">
+      <param.hdl.Workflow />
+      <param.hdl.TargetLanguage />
+      <param.hdl.TargetPlatform />
+      <param.hdl.SynthesisTool />
+      <param.hdl.InputFrequency />
+      <param.hdl.TargetFrequency />
+      <param.hdl.IPCoreName />
+      <param.hdl.IPCoreVersion />
+      <param.hdl.AdditionalIPFiles />
+      <param.hdl.ExecutionMode />
+      <param.hdl.SynthesisToolChipFamily />
+      <param.hdl.SynthesisToolDeviceName />
+      <param.hdl.SynthesisToolPackageName />
+      <param.hdl.SynthesisToolSpeedValue />
+      <param.hdl.TargetInterface />
+      <param.hdl.CheckConformance />
+      <param.hdl.LaunchConformanceReport />
+      <param.hdl.GenerateEDAScripts />
+      <param.hdl.GenerateHDLCode />
+      <param.hdl.AdditionalSynthesisProjectFiles />
+      <param.hdl.CriticalPathSource />
+      <param.hdl.EmbeddedSystemTool />
+      <param.hdl.EmbeddedSystemProjectFolder />
+      <param.hdl.BitstreamBuildMode />
+      <param.hdl.ReferenceDesign />
+      <param.hdl.ReferenceDesignPath />
+      <param.hdl.LegacyDefaultTestFile />
+      <param.WorkingFolder>option.WorkingFolder.Project</param.WorkingFolder>
+      <param.SpecifiedWorkingFolder />
+      <param.BuildFolder>option.BuildFolder.Project</param.BuildFolder>
+      <param.SpecifiedBuildFolder />
+      <param.SearchPaths />
+      <param.hdl.MapPersistentVarsToRAM />
+      <param.hdl.RAMThreshold />
+      <param.hdl.RAMVariableNames />
+      <param.hdl.RegisterInputs />
+      <param.hdl.RegisterOutputs />
+      <param.hdl.DistributedPipelining />
+      <param.hdl.DistributedPipeliningPriority />
+      <param.hdl.PreserveDesignDelays />
+      <param.hdl.InputPipeline />
+      <param.hdl.OutputPipeline />
+      <param.hdl.PipelineVariables />
+      <param.hdl.ResourceSharing />
+      <param.hdl.ConstantMultiplierOptimization />
+      <param.hdl.LoopOptimization />
+      <param.GenerateComments />
+      <param.MATLABSourceComments />
+      <param.hdl.VHDLFileExt />
+      <param.hdl.VerilogFileExt />
+      <param.hdl.DateComment />
+      <param.hdl.UserComment />
+      <param.hdl.ModulePrefix />
+      <param.hdl.PackagePostfix />
+      <param.hdl.EntityConflictPostfix />
+      <param.hdl.ReservedWordPostfix />
+      <param.hdl.ClockProcessPostfix />
+      <param.hdl.ComplexRealPostfix />
+      <param.hdl.ComplexImagPostfix />
+      <param.hdl.PipelinePostfix />
+      <param.hdl.EnablePrefix />
+      <param.hdl.InlineConfigurations />
+      <param.hdl.UseRisingEdge />
+      <param.hdl.UseMatrixTypesInHDL />
+      <param.EnableScreener />
+      <param.GenerateReport />
+      <param.hdl.HDLCompileFilePostfix />
+      <param.hdl.HDLCompileInit />
+      <param.hdl.HDLCompileVHDLCmd />
+      <param.hdl.HDLCompileVerilogCmd />
+      <param.hdl.HDLCompileTerm />
+      <param.hdl.HDLSimFilePostfix />
+      <param.hdl.HDLSimInit />
+      <param.hdl.HDLSimCmd />
+      <param.hdl.HDLSimViewWaveCmd />
+      <param.hdl.HDLSimTerm />
+      <param.hdl.HDLSynthTool />
+      <var.hasSynthesisToolScript />
+      <var.toolSpecificEDAScript />
+      <param.hdl.HDLSynthFilePostfix />
+      <param.hdl.HDLSynthInit />
+      <param.hdl.HDLSynthCmd />
+      <param.hdl.HDLSynthTerm />
+      <param.hdl.HDLLintTool />
+      <var.LintToolScript />
+      <var.hasHDLLintTool />
+      <param.hdl.HDLLintInit />
+      <param.hdl.HDLLintCmd />
+      <param.hdl.HDLLintTerm />
+      <param.hdl.ResetType />
+      <param.hdl.ResetAssertedLevel />
+      <param.hdl.ResetInputPort />
+      <param.hdl.ClockInputPort />
+      <param.hdl.ClockEdge />
+      <param.hdl.ClockEnableInputPort />
+      <param.hdl.Oversampling />
+      <param.hdl.EnableRate />
+      <param.hdl.InputType />
+      <param.hdl.OutputType />
+      <param.hdl.ClockEnableOutputPort />
+      <param.hdl.ScalarizePorts />
+      <param.hdl.HDLCodingStandard />
+      <var.HDLCodingStandard_FilterPassingRules_enable />
+      <var.HDLCodingStandard_DetectDuplicateNamesCheck_enable />
+      <var.HDLCodingStandard_HDLKeywords_enable />
+      <var.HDLCodingStandard_ModuleInstanceEntityNameLength_enable />
+      <var.HDLCodingStandard_ModuleInstanceEntityNameLength_min />
+      <var.HDLCodingStandard_ModuleInstanceEntityNameLength_max />
+      <var.HDLCodingStandard_SignalPortParamNameLength_enable />
+      <var.HDLCodingStandard_SignalPortParamNameLength_min />
+      <var.HDLCodingStandard_SignalPortParamNameLength_max />
+      <var.HDLCodingStandard_MinimizeVariableUsage_enable />
+      <var.HDLCodingStandard_InitialStatements_enable />
+      <var.HDLCodingStandard_IfElseChain_enable />
+      <var.HDLCodingStandard_IfElseChain_length />
+      <var.HDLCodingStandard_IfElseNesting_enable />
+      <var.HDLCodingStandard_IfElseNesting_depth />
+      <var.HDLCodingStandard_MultiplierBitWidth_enable />
+      <var.HDLCodingStandard_MultiplierBitWidth_width />
+      <var.HDLCodingStandard_NonIntegerTypes_enable />
+      <var.HDLCodingStandard_LineLength_enable />
+      <var.HDLCodingStandard_LineLength_length />
+      <param.hdl.GenerateCosimTestBench />
+      <param.hdl.CosimLogOutputs />
+      <param.hdl.CosimTool />
+      <param.hdl.CosimRunMode />
+      <param.hdl.SimulateCosimTestBench />
+      <param.hdl.CosimClockHighTime />
+      <param.hdl.CosimClockLowTime />
+      <param.hdl.CosimHoldTime />
+      <param.hdl.CosimClockEnableDelay />
+      <param.hdl.CosimResetLength />
+      <param.hdl.GenerateFILTestBench />
+      <param.hdl.FILLogOutputs />
+      <param.hdl.FILBoardName />
+      <param.hdl.FILConnection />
+      <param.hdl.FILBoardIPAddress />
+      <param.hdl.FILBoardMACAddress />
+      <param.hdl.FILAdditionalFiles />
+      <param.hdl.SimulateFILTestBench />
+      <var.hasTestBench />
+      <param.hdl.GenerateHDLTestBench />
+      <param.hdl.SimulateGeneratedCode />
+      <param.hdl.SimulationTool />
+      <param.hdl.TestBenchPostfix />
+      <param.hdl.ForceClock />
+      <param.hdl.ClockHighTime />
+      <param.hdl.ClockLowTime />
+      <param.hdl.HoldTime />
+      <param.hdl.ForceClockEnable />
+      <param.hdl.TestBenchClockEnableDelay />
+      <param.hdl.ForceReset />
+      <param.hdl.ResetLength />
+      <param.hdl.HoldInputDataBetweenSamples />
+      <param.hdl.InputDataInterval />
+      <param.hdl.InitializeTestBenchInputs />
+      <param.hdl.MultifileTestBench />
+      <param.hdl.TestBenchDataPostfix />
+      <param.hdl.TestReferencePostfix />
+      <param.hdl.UseFileIOInTestBench />
+      <param.hdl.IgnoreDataChecking />
+      <param.hdl.SimulationIterationLimit />
+      <param.hdl.UseFiAccelForTestBench />
+      <param.hdl.hdlVariables />
+      <param.hdl.hdlComputedVariables />
+      <param.hdl.InitializeBlockRAM />
+      <param.hdl.RAMArchitecture />
+      <param.hdl.PartitionFunctions />
+      <param.hdl.GenerateMLFcnBlock />
+      <param.hdl.GenerateXSGBlock />
+      <unset>
+        <param.hdl.Workflow />
+        <param.hdl.TargetLanguage />
+        <param.hdl.TargetPlatform />
+        <param.hdl.SynthesisTool />
+        <param.hdl.InputFrequency />
+        <param.hdl.TargetFrequency />
+        <param.hdl.IPCoreName />
+        <param.hdl.IPCoreVersion />
+        <param.hdl.AdditionalIPFiles />
+        <param.hdl.ExecutionMode />
+        <param.hdl.SynthesisToolChipFamily />
+        <param.hdl.SynthesisToolDeviceName />
+        <param.hdl.SynthesisToolPackageName />
+        <param.hdl.SynthesisToolSpeedValue />
+        <param.hdl.TargetInterface />
+        <param.hdl.CheckConformance />
+        <param.hdl.LaunchConformanceReport />
+        <param.hdl.GenerateEDAScripts />
+        <param.hdl.GenerateHDLCode />
+        <param.hdl.AdditionalSynthesisProjectFiles />
+        <param.hdl.CriticalPathSource />
+        <param.hdl.EmbeddedSystemTool />
+        <param.hdl.EmbeddedSystemProjectFolder />
+        <param.hdl.BitstreamBuildMode />
+        <param.hdl.ReferenceDesign />
+        <param.hdl.ReferenceDesignPath />
+        <param.hdl.LegacyDefaultTestFile />
+        <param.WorkingFolder />
+        <param.SpecifiedWorkingFolder />
+        <param.BuildFolder />
+        <param.SpecifiedBuildFolder />
+        <param.SearchPaths />
+        <param.hdl.MapPersistentVarsToRAM />
+        <param.hdl.RAMThreshold />
+        <param.hdl.RAMVariableNames />
+        <param.hdl.RegisterInputs />
+        <param.hdl.RegisterOutputs />
+        <param.hdl.DistributedPipelining />
+        <param.hdl.DistributedPipeliningPriority />
+        <param.hdl.PreserveDesignDelays />
+        <param.hdl.InputPipeline />
+        <param.hdl.OutputPipeline />
+        <param.hdl.PipelineVariables />
+        <param.hdl.ResourceSharing />
+        <param.hdl.ConstantMultiplierOptimization />
+        <param.hdl.LoopOptimization />
+        <param.GenerateComments />
+        <param.MATLABSourceComments />
+        <param.hdl.VHDLFileExt />
+        <param.hdl.VerilogFileExt />
+        <param.hdl.DateComment />
+        <param.hdl.UserComment />
+        <param.hdl.ModulePrefix />
+        <param.hdl.PackagePostfix />
+        <param.hdl.EntityConflictPostfix />
+        <param.hdl.ReservedWordPostfix />
+        <param.hdl.ClockProcessPostfix />
+        <param.hdl.ComplexRealPostfix />
+        <param.hdl.ComplexImagPostfix />
+        <param.hdl.PipelinePostfix />
+        <param.hdl.EnablePrefix />
+        <param.hdl.InlineConfigurations />
+        <param.hdl.UseRisingEdge />
+        <param.hdl.UseMatrixTypesInHDL />
+        <param.EnableScreener />
+        <param.GenerateReport />
+        <param.hdl.HDLCompileFilePostfix />
+        <param.hdl.HDLCompileInit />
+        <param.hdl.HDLCompileVHDLCmd />
+        <param.hdl.HDLCompileVerilogCmd />
+        <param.hdl.HDLCompileTerm />
+        <param.hdl.HDLSimFilePostfix />
+        <param.hdl.HDLSimInit />
+        <param.hdl.HDLSimCmd />
+        <param.hdl.HDLSimViewWaveCmd />
+        <param.hdl.HDLSimTerm />
+        <param.hdl.HDLSynthTool />
+        <var.hasSynthesisToolScript />
+        <var.toolSpecificEDAScript />
+        <param.hdl.HDLSynthFilePostfix />
+        <param.hdl.HDLSynthInit />
+        <param.hdl.HDLSynthCmd />
+        <param.hdl.HDLSynthTerm />
+        <param.hdl.HDLLintTool />
+        <var.LintToolScript />
+        <var.hasHDLLintTool />
+        <param.hdl.HDLLintInit />
+        <param.hdl.HDLLintCmd />
+        <param.hdl.HDLLintTerm />
+        <param.hdl.ResetType />
+        <param.hdl.ResetAssertedLevel />
+        <param.hdl.ResetInputPort />
+        <param.hdl.ClockInputPort />
+        <param.hdl.ClockEdge />
+        <param.hdl.ClockEnableInputPort />
+        <param.hdl.Oversampling />
+        <param.hdl.EnableRate />
+        <param.hdl.InputType />
+        <param.hdl.OutputType />
+        <param.hdl.ClockEnableOutputPort />
+        <param.hdl.ScalarizePorts />
+        <param.hdl.HDLCodingStandard />
+        <var.HDLCodingStandard_FilterPassingRules_enable />
+        <var.HDLCodingStandard_DetectDuplicateNamesCheck_enable />
+        <var.HDLCodingStandard_HDLKeywords_enable />
+        <var.HDLCodingStandard_ModuleInstanceEntityNameLength_enable />
+        <var.HDLCodingStandard_ModuleInstanceEntityNameLength_min />
+        <var.HDLCodingStandard_ModuleInstanceEntityNameLength_max />
+        <var.HDLCodingStandard_SignalPortParamNameLength_enable />
+        <var.HDLCodingStandard_SignalPortParamNameLength_min />
+        <var.HDLCodingStandard_SignalPortParamNameLength_max />
+        <var.HDLCodingStandard_MinimizeVariableUsage_enable />
+        <var.HDLCodingStandard_InitialStatements_enable />
+        <var.HDLCodingStandard_IfElseChain_enable />
+        <var.HDLCodingStandard_IfElseChain_length />
+        <var.HDLCodingStandard_IfElseNesting_enable />
+        <var.HDLCodingStandard_IfElseNesting_depth />
+        <var.HDLCodingStandard_MultiplierBitWidth_enable />
+        <var.HDLCodingStandard_MultiplierBitWidth_width />
+        <var.HDLCodingStandard_NonIntegerTypes_enable />
+        <var.HDLCodingStandard_LineLength_enable />
+        <var.HDLCodingStandard_LineLength_length />
+        <param.hdl.GenerateCosimTestBench />
+        <param.hdl.CosimLogOutputs />
+        <param.hdl.CosimTool />
+        <param.hdl.CosimRunMode />
+        <param.hdl.SimulateCosimTestBench />
+        <param.hdl.CosimClockHighTime />
+        <param.hdl.CosimClockLowTime />
+        <param.hdl.CosimHoldTime />
+        <param.hdl.CosimClockEnableDelay />
+        <param.hdl.CosimResetLength />
+        <param.hdl.GenerateFILTestBench />
+        <param.hdl.FILLogOutputs />
+        <param.hdl.FILBoardName />
+        <param.hdl.FILConnection />
+        <param.hdl.FILBoardIPAddress />
+        <param.hdl.FILBoardMACAddress />
+        <param.hdl.FILAdditionalFiles />
+        <param.hdl.SimulateFILTestBench />
+        <var.hasTestBench />
+        <param.hdl.GenerateHDLTestBench />
+        <param.hdl.SimulateGeneratedCode />
+        <param.hdl.SimulationTool />
+        <param.hdl.TestBenchPostfix />
+        <param.hdl.ForceClock />
+        <param.hdl.ClockHighTime />
+        <param.hdl.ClockLowTime />
+        <param.hdl.HoldTime />
+        <param.hdl.ForceClockEnable />
+        <param.hdl.TestBenchClockEnableDelay />
+        <param.hdl.ForceReset />
+        <param.hdl.ResetLength />
+        <param.hdl.HoldInputDataBetweenSamples />
+        <param.hdl.InputDataInterval />
+        <param.hdl.InitializeTestBenchInputs />
+        <param.hdl.MultifileTestBench />
+        <param.hdl.TestBenchDataPostfix />
+        <param.hdl.TestReferencePostfix />
+        <param.hdl.UseFileIOInTestBench />
+        <param.hdl.IgnoreDataChecking />
+        <param.hdl.SimulationIterationLimit />
+        <param.hdl.UseFiAccelForTestBench />
+        <param.hdl.hdlVariables />
+        <param.hdl.hdlComputedVariables />
+        <param.hdl.InitializeBlockRAM />
+        <param.hdl.RAMArchitecture />
+        <param.hdl.PartitionFunctions />
+        <param.hdl.GenerateMLFcnBlock />
+        <param.hdl.GenerateXSGBlock />
+      </unset>
+    </profile>
+    <param.objective>option.objective.fixedpoint</param.objective>
+    <param.WorkflowStep>fixedPoint</param.WorkflowStep>
+    <param.TestSnippets>
+      <item>inputs</item>
+    </param.TestSnippets>
+    <param.DefaultImportExportVariable />
+    <param.UseGlobals>option.UseGlobals.No</param.UseGlobals>
+    <param.outputfile />
+    <param.version />
+    <param.HasECoderFeatures />
+    <param.mex.mainhtml />
+    <param.grt.mainhtml />
+    <param.CallGeneratedCodeFromTest />
+    <param.VerificationMode />
+    <param.SILDebugging />
+    <param.CodeExecutionProfiling />
+    <param.DefaultTestFile />
+    <param.AutoInferDefaultFile />
+    <param.AutoInferUseVariableSize />
+    <param.AutoInferUseUnboundedSize />
+    <param.AutoInferVariableSizeThreshold />
+    <param.AutoInferUnboundedSizeThreshold />
+    <param.EnableFixedPointStep>true</param.EnableFixedPointStep>
+    <param.AnnotationChecksum />
+    <var.LegacyTarget />
+    <var.MirrorOnOpen>false</var.MirrorOnOpen>
+    <param.mex.outputfile />
+    <param.grt.outputfile />
+    <param.artifact>option.target.artifact.mex</param.artifact>
+    <param.FixedPointMode>option.FixedPointMode.Automatic</param.FixedPointMode>
+    <param.AutoScaleLoopIndexVariables />
+    <param.ComputedFixedPointData>
+      <ComputedEntities>
+        <Function file="$(PROJECTDIR)/fir.m" name="fir" specialization="fir_s1" specializationId="1" uniqueId="f37_fir">
+          <Variable name="b">
+            <Column property="Kind" type="String" value="input" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>8</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="n">
+            <Column property="Kind" type="String" value="index" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="x">
+            <Column property="Kind" type="String" value="input" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>7</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="y">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>7</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="z">
+            <Column property="Kind" type="String" value="input_output" />
+            <MATLABType class="double" complex="false">
+              <size>8</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+        </Function>
+        <Function file="$(PROJECTDIR)/fir.m" name="fir" specialization="fir_s2" specializationId="2" uniqueId="f39_fir">
+          <Variable name="b">
+            <Column property="Kind" type="String" value="input" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>8</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="n">
+            <Column property="Kind" type="String" value="index" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="x">
+            <Column property="Kind" type="String" value="input" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21594</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="y">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21594</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="z">
+            <Column property="Kind" type="String" value="input_output" />
+            <MATLABType class="double" complex="false">
+              <size>8</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+        </Function>
+        <Function file="$(PROJECTDIR)/fixed_rivas.m" name="fixed_rivas" specialization="fixed_rivas" specializationId="-1" uniqueId="fixed_rivas">
+          <Variable name="ECG">
+            <Column property="Kind" type="String" value="input" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21600</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="ECG_d">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21594</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="ECG_d1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>7</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="ECG_i">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21594</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="ECG_s">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21594</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="K">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="N">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="Nd">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="QRSint">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="RRmin">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="Rpeak">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21600</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="RpeakPos">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21600</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="bd">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>8</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="bi">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>8</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="count">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="i">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="len">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="peak">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="peakPos">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="r">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="th">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="x">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21600</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="y">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>21594</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="zd">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>8</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="zd1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>8</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="zi">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>8</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+        </Function>
+      </ComputedEntities>
+    </param.ComputedFixedPointData>
+    <param.UserFixedPointData>
+      <UserEntities>
+        <Function file="$(PROJECTDIR)/fir.m" name="fir" specialization="fir_s1" specializationId="1" uniqueId="f37_fir">
+          <Variable name="b" />
+          <Variable name="n" />
+          <Variable name="x" />
+          <Variable name="y" />
+          <Variable name="z" />
+        </Function>
+        <Function file="$(PROJECTDIR)/fir.m" name="fir" specialization="fir_s2" specializationId="2" uniqueId="f39_fir">
+          <Variable name="b" />
+          <Variable name="n" />
+          <Variable name="x" />
+          <Variable name="y" />
+          <Variable name="z" />
+        </Function>
+        <Function file="$(PROJECTDIR)/fixed_rivas.m" name="fixed_rivas" specialization="fixed_rivas" specializationId="-1" uniqueId="fixed_rivas">
+          <Variable name="ECG">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="0.0" />
+            <Column property="DesignMax" type="Double" value="2048.0" />
+          </Variable>
+          <Variable name="ECG_d" />
+          <Variable name="ECG_d1" />
+          <Variable name="ECG_i" />
+          <Variable name="ECG_s" />
+          <Variable name="K" />
+          <Variable name="N">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="8.0" />
+            <Column property="DesignMax" type="Double" value="8.0" />
+          </Variable>
+          <Variable name="Nd">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="7.0" />
+            <Column property="DesignMax" type="Double" value="7.0" />
+          </Variable>
+          <Variable name="QRSint">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="21.599999999999998" />
+          </Variable>
+          <Variable name="RRmin" />
+          <Variable name="Rpeak">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="0.0" />
+            <Column property="DesignMax" type="Double" value="2048.0" />
+          </Variable>
+          <Variable name="RpeakPos">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="0.0" />
+            <Column property="DesignMax" type="Double" value="21600.0" />
+          </Variable>
+          <Variable name="bd" />
+          <Variable name="bi" />
+          <Variable name="count" />
+          <Variable name="i">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="1.0" />
+            <Column property="DesignMax" type="Double" value="21588.0" />
+          </Variable>
+          <Variable name="len" />
+          <Variable name="peak">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="0.0" />
+          </Variable>
+          <Variable name="peakPos">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="1.0" />
+            <Column property="DesignMax" type="Double" value="21600.0" />
+          </Variable>
+          <Variable name="r">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="1.0" />
+            <Column property="DesignMax" type="Double" value="21600.0" />
+          </Variable>
+          <Variable name="th">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="0.0" />
+          </Variable>
+          <Variable name="x">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="0.0" />
+            <Column property="DesignMax" type="Double" value="2048.0" />
+          </Variable>
+          <Variable name="y">
+            <Column property="DesignRangeIsAutoDefined" type="Boolean" value="false" />
+            <Column property="DesignMin" type="Double" value="0.0" />
+          </Variable>
+          <Variable name="zd" />
+          <Variable name="zd1" />
+          <Variable name="zi" />
+        </Function>
+      </UserEntities>
+    </param.UserFixedPointData>
+    <param.DefaultWordLength>16</param.DefaultWordLength>
+    <param.DefaultFractionLength>4</param.DefaultFractionLength>
+    <param.FixedPointSafetyMargin>0</param.FixedPointSafetyMargin>
+    <param.FixedPointFimath>fimath('RoundingMethod', 'Floor', 'OverflowAction', 'Wrap', 'ProductMode', 'KeepMSB', 'SumMode', 'FullPrecision', 'ProductWordLength', 32)</param.FixedPointFimath>
+    <param.FixedPointTypeSource>option.FixedPointTypeSource.SimAndDerived</param.FixedPointTypeSource>
+    <param.StaticAnalysisTimeout />
+    <param.StaticAnalysisGlobalRangesOnly>false</param.StaticAnalysisGlobalRangesOnly>
+    <param.LogAllIOValues>true</param.LogAllIOValues>
+    <param.DetectOverflows>false</param.DetectOverflows>
+    <param.LogHistogram>false</param.LogHistogram>
+    <param.ShowCoverage>true</param.ShowCoverage>
+    <param.ExcludedFixedPointVerificationFiles />
+    <param.ExcludedFixedPointSimulationFiles />
+    <param.InstrumentedBuildChecksum>4238313576</param.InstrumentedBuildChecksum>
+    <param.FixedPointStaticAnalysisChecksum>1875881166</param.FixedPointStaticAnalysisChecksum>
+    <param.InstrumentedMexFile>${PROJECT_ROOT}/codegen/fixed_rivas/fixpt/fixed_rivas_float_mex.mexa64</param.InstrumentedMexFile>
+    <param.FixedPointValidationChecksum>1814568695</param.FixedPointValidationChecksum>
+    <param.FixedPointSourceCodeChecksum>4168692465</param.FixedPointSourceCodeChecksum>
+    <param.FixedPointFunctionReplacements>
+      <FunctionReplacements />
+    </param.FixedPointFunctionReplacements>
+    <param.OptimizeWholeNumbers>true</param.OptimizeWholeNumbers>
+    <param.ContainerTypes>false</param.ContainerTypes>
+    <param.GeneratedFixedPointFileSuffix>_fixpt</param.GeneratedFixedPointFileSuffix>
+    <param.PlotFunction />
+    <param.SDIPlot>true</param.SDIPlot>
+    <param.EnableCodeEfficiencyChecks>false</param.EnableCodeEfficiencyChecks>
+    <param.DefaultFixedPointSignedness>option.DefaultFixedPointSignedness.Automatic</param.DefaultFixedPointSignedness>
+    <param.FixedPointTypeProposalMode>option.FixedPointTypeProposalMode.ProposeFractionLengths</param.FixedPointTypeProposalMode>
+    <param.EnableFixedPointStep>true</param.EnableFixedPointStep>
+    <unset>
+      <param.DefaultImportExportVariable />
+      <param.UseGlobals />
+      <param.outputfile />
+      <param.version />
+      <param.HasECoderFeatures />
+      <param.mex.mainhtml />
+      <param.grt.mainhtml />
+      <param.CallGeneratedCodeFromTest />
+      <param.VerificationMode />
+      <param.SILDebugging />
+      <param.CodeExecutionProfiling />
+      <param.DefaultTestFile />
+      <param.AutoInferDefaultFile />
+      <param.AutoInferUseVariableSize />
+      <param.AutoInferUseUnboundedSize />
+      <param.AutoInferVariableSizeThreshold />
+      <param.AutoInferUnboundedSizeThreshold />
+      <param.AnnotationChecksum />
+      <var.LegacyTarget />
+      <var.MirrorOnOpen />
+      <param.mex.outputfile />
+      <param.grt.outputfile />
+      <param.AutoScaleLoopIndexVariables />
+      <param.DefaultFractionLength />
+      <param.FixedPointSafetyMargin />
+      <param.StaticAnalysisTimeout />
+      <param.StaticAnalysisGlobalRangesOnly />
+      <param.DetectOverflows />
+      <param.LogHistogram />
+      <param.ShowCoverage />
+      <param.ExcludedFixedPointVerificationFiles />
+      <param.ExcludedFixedPointSimulationFiles />
+    </unset>
+    <fileset.entrypoints>
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/fixed_rivas.m">
+        <Inputs fileName="fixed_rivas.m" functionName="fixed_rivas">
+          <Input Name="ECG">
+            <Class>double</Class>
+            <Size>1 x 21600</Size>
+            <Value />
+            <InitialValue />
+            <UserDefined>false</UserDefined>
+            <Complex>false</Complex>
+          </Input>
+        </Inputs>
+      </file>
+    </fileset.entrypoints>
+    <fileset.testbench>
+      <file>${PROJECT_ROOT}/inputs.m</file>
+    </fileset.testbench>
+    <build-deliverables />
+    <workflow />
+    <matlab>
+      <root>/usr/local/MATLAB/R2014b</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>4.4.1-2-ARCH</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

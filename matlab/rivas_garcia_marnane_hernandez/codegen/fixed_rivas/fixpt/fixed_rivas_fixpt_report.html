@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for fixed_rivas_fixpt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<h3>Generated on  2016-02-25 00:26:01</h3>
+The following table shows fixed point instrumentation results<BR/>
+<body style="font-family: monospace">
+<h2><font face="Arial, Helvetica, sans-serif" color="#990000">Fixed-Point Report 
+fir_s1
+<BR/></h2></font>
+<pre>function [y,z] = fir_s1(b,x,z_1)
+    fm = fimath( 'RoundingMethod', 'Floor', 'OverflowAction', 'Wrap', 'ProductMode', 'FullPrecision', 'SumMode', 'FullPrecision' );
+    z = fi( z_1, 1, 13, 0, fm );
+    y = fi( zeros( size( x ) ), 1, 13, 0, fm );
+    for n = 1:length( x )
+        z = fi( [ fi( x( n ), 0, 10, 0, fm ); z( 1:end - 1 ) ], 1, 13, 0, fm );
+        y( n ) = b*z;
+    end
+end
+</pre><TABLE border="1"><TR BGCOLOR="#99CCFF"><th> <B>Variable Name</B> </th><th align="center"> <B>Type</B> </th><th align="center"> <B>Sim Min</B> </th><th align="center"> <B>Sim Max</B> </th></TR><TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">b</TD><TD style="border-style: none" align="left">numerictype(1, 2, 0) 1 x 8 </TD><TD style="border-style: none" align="right">-1</TD><TD style="border-style: none" align="right">1</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">n</TD><TD style="border-style: none" align="left">double</TD><TD style="border-style: none" align="right">1</TD><TD style="border-style: none" align="right">7</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">x</TD><TD style="border-style: none" align="left">numerictype(0, 12, 0) 1 x 7 </TD><TD style="border-style: none" align="right">955</TD><TD style="border-style: none" align="right">955</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">y</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 1 x 7 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">955</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">z</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">955</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">z_1</TD><TD style="border-style: none" align="left">numerictype(0, 1, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">0</TD></TR>
+</TABLE>
+<BR>
+<body style="font-family: monospace">
+<h2><font face="Arial, Helvetica, sans-serif" color="#990000">Fixed-Point Report 
+fir_s2>1
+<BR/></h2></font>
+<pre>function [y,z] = fir_s2(b,x,z_1)
+    fm = fimath( 'RoundingMethod', 'Floor', 'OverflowAction', 'Wrap', 'ProductMode', 'FullPrecision', 'SumMode', 'FullPrecision' );
+    z = fi( z_1, 1, 13, 0, fm );
+    y = fi( zeros( size( x ) ), 1, 16, 3, fm );
+    for n = 1:length( x )
+        z = fi( [ fi( x( n ), 1, 12, 0, fm ); z( 1:end - 1 ) ], 1, 13, 0, fm );
+        y( n ) = b*z;
+    end
+end
+</pre><TABLE border="1"><TR BGCOLOR="#99CCFF"><th> <B>Variable Name</B> </th><th align="center"> <B>Type</B> </th><th align="center"> <B>Sim Min</B> </th><th align="center"> <B>Sim Max</B> </th></TR><TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">b</TD><TD style="border-style: none" align="left">numerictype(1, 2, 0) 1 x 8 </TD><TD style="border-style: none" align="right">-1</TD><TD style="border-style: none" align="right">1</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">n</TD><TD style="border-style: none" align="left">double</TD><TD style="border-style: none" align="right">1</TD><TD style="border-style: none" align="right">21594</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">x</TD><TD style="border-style: none" align="left">numerictype(0, 12, 0) 1 x 21594 </TD><TD style="border-style: none" align="right">892</TD><TD style="border-style: none" align="right">1342</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">y</TD><TD style="border-style: none" align="left">numerictype(1, 16, 3) 1 x 21594 </TD><TD style="border-style: none" align="right">-329</TD><TD style="border-style: none" align="right">389</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">z</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">1342</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">z_1</TD><TD style="border-style: none" align="left">numerictype(0, 12, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">955</TD></TR>
+</TABLE>
+<BR>
+<body style="font-family: monospace">
+<h2><font face="Arial, Helvetica, sans-serif" color="#990000">Fixed-Point Report 
+fir_s2>2
+<BR/></h2></font>
+<pre>function [y,z] = fir_s2(b,x,z_1)
+    fm = fimath( 'RoundingMethod', 'Floor', 'OverflowAction', 'Wrap', 'ProductMode', 'FullPrecision', 'SumMode', 'FullPrecision' );
+    z = fi( z_1, 1, 13, 0, fm );
+    y = fi( zeros( size( x ) ), 1, 16, 3, fm );
+    for n = 1:length( x )
+        z = fi( [ fi( x( n ), 1, 12, 0, fm ); z( 1:end - 1 ) ], 1, 13, 0, fm );
+        y( n ) = b*z;
+    end
+end
+</pre><TABLE border="1"><TR BGCOLOR="#99CCFF"><th> <B>Variable Name</B> </th><th align="center"> <B>Type</B> </th><th align="center"> <B>Sim Min</B> </th><th align="center"> <B>Sim Max</B> </th></TR><TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">b</TD><TD style="border-style: none" align="left">numerictype(0, 16, 18) 1 x 8 </TD><TD style="border-style: none" align="right">0.125</TD><TD style="border-style: none" align="right">0.125</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">n</TD><TD style="border-style: none" align="left">double</TD><TD style="border-style: none" align="right">1</TD><TD style="border-style: none" align="right">21594</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">x</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 1 x 21594 </TD><TD style="border-style: none" align="right">-329</TD><TD style="border-style: none" align="right">389</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">y</TD><TD style="border-style: none" align="left">numerictype(1, 16, 3) 1 x 21594 </TD><TD style="border-style: none" align="right">-224.25</TD><TD style="border-style: none" align="right">252.25</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">z</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 8 x 1 </TD><TD style="border-style: none" align="right">-329</TD><TD style="border-style: none" align="right">389</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">z_1</TD><TD style="border-style: none" align="left">numerictype(0, 1, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">0</TD></TR>
+</TABLE>
+<BR>
+<body style="font-family: monospace">
+<h2><font face="Arial, Helvetica, sans-serif" color="#990000">Fixed-Point Report 
+fixed_rivas_fixpt
+<BR/></h2></font>
+<pre>function [RpeakPos,Rpeak,ECG_d,ECG_i,ECG_s] = fixed_rivas_fixpt(ECG)
+    fm = fimath( 'RoundingMethod', 'Floor', 'OverflowAction', 'Wrap', 'ProductMode', 'FullPrecision', 'SumMode', 'FullPrecision' );
+    %function [RpeakPos Rpeak ] = fixed_rivas(ECG)
+    %ECG has to be long 21600 = 1 minute of recordings
+    %initaliazing
+    len = fi( 21600, 0, 15, 0, fm );
+    Nd = fi( 7, 0, 3, 0, fm );
+    ECG_d = fi( zeros( 1, fi_toint( fi_signed( len ) - Nd + fi( 1, 0, 1, 0, fm ) ) ), 1, 13, 0, fm );
+    ECG_i = fi( zeros( 1, fi_toint( fi_signed( len ) - Nd + fi( 1, 0, 1, 0, fm ) ) ), 1, 16, 3, fm );
+    ECG_s = fi( zeros( 1, fi_toint( fi_signed( len ) - Nd + fi( 1, 0, 1, 0, fm ) ) ), 0, 16, -7, fm );
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%DIFFERENTIATOR
+    %difference equation: y(n)= x[n] -x[n-Nd]
+    %Nd = 7; %round(3*fs/128) -1;
+    bd = fi( [ 1, zeros( 1, fi_toint( fi_signed( Nd ) - fi( 1, 0, 1, 0, fm ) ) ), -1 ], 1, 2, 0, fm );
+    zd = fi( zeros( length( bd ), 1 ), 0, 1, 0, fm );
+    [fmo_1,fmo_2] = fir_s1( bd, ECG( fi( 1, 0, 1, 0, fm ):Nd ), zd );
+    ECG_d1 = fi( fmo_1, 0, 12, 0, fm );
+    zd1 = fi( fmo_2, 0, 12, 0, fm );
+    %get initial conditions accounting for delay
+    ECG_d( : ) = fir_s2( bd, ECG( Nd:len ), zd1 );
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%MOVING WINDOW INTEGRATOR
+    %%% Moving average y[n] =  1/(N-1) \Sigma_{k=0}^{N-1} x[n-k]
+    N = fi( Nd + fi( 1, 0, 1, 0, fm ), 0, 4, 0, fm );  %window of the moving average
+    %b = (1/(N-1))*ones(1,N);; %this is the one on the paper but I think it's wrong
+    bi = fi( (fi_div( fi( 1, 0, 1, 0, fm ), N ))*fi( ones( 1, fi_toint( N ) ), 0, 1, 0, fm ), 0, 16, 18, fm );
+    zi = fi( zeros( length( bi ), 1 ), 0, 1, 0, fm );
+    ECG_i( : ) = fir_s2( bi, ECG_d, zi );
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%SQUARING
+    ECG_s( : ) = ECG_i .* ECG_i;
+    %
+    %%end of preprocessing stage
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %PEAK Detection stage
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    x = fi( ECG, 0, 12, 0, fm );
+    y = fi( ECG_s, 0, 16, 0, fm );  %output of the preprocessing stage
+    %RRmin = 200e-3*fs;
+    RRmin = fi( 72, 0, 7, 0, fm );
+    QRSint = fi( 21.6, 0, 16, 11, fm );  %60e-3*fs;
+    %Pth= 0.7*fs/128 + 4.7;
+    K = fi( 0.98164, 0, 16, 16, fm );  %6214845220;
+    i = fi( 1, 0, 15, 0, fm );  %signal index
+    r = fi( 1, 0, 15, 0, fm );  %R peaks and positions index
+    th = fi( 0, 0, 8, 0, fm );  %threshold
+    count = fi( 0, 0, 7, 0, fm );
+    Rpeak = fi( zeros( 1, fi_toint( len ) ), 0, 16, 0, fm );
+    RpeakPos = fi( Rpeak, 0, 15, 0, fm );
+    %Rpeak=[];
+    %RpeakPos=[];
+    while (i< fi_signed( len ) - Nd + fi( 1, 0, 1, 0, fm ))
+        %State 1
+        count( : ) = 0;
+        peak = fi( y( i ), 0, 16, 0, fm );
+        peakPos = fi( i, 0, 15, 0, fm );
+        while (count< =RRmin + QRSint)
+            if (y( i )>peak)
+                peak( : ) = y( i );
+                peakPos( : ) = i;
+            end
+            count( : ) = count + fi( 1, 0, 1, 0, fm );
+            i( : ) = i + fi( 1, 0, 1, 0, fm );
+            if (i>=fi_signed( len ) - Nd + fi( 1, 0, 1, 0, fm ))  %to avoid going out of bounds
+                break
+            end
+        end
+        Rpeak( r ) = peak;
+        RpeakPos( r ) = peakPos;
+        count( : ) = i - RpeakPos( r ) - fi( 1, 0, 1, 0, fm );  %to compensate
+        r( : ) = r + fi( 1, 0, 1, 0, fm );
+        %State 2
+        while (count< =RRmin)
+            count( : ) = count + fi( 1, 0, 1, 0, fm );
+        end
+        th( : ) = mean( Rpeak );
+        %State 3
+        while (y( i )< =th)
+            i( : ) = i + fi( 1, 0, 1, 0, fm );
+            if (i>=fi_signed( len ) - Nd + fi( 1, 0, 1, 0, fm ))  %to avoid going out of bounds
+                break
+            end
+            th( : ) = th*K;
+        end
+    end
+end
+</pre><TABLE border="1"><TR BGCOLOR="#99CCFF"><th> <B>Variable Name</B> </th><th align="center"> <B>Type</B> </th><th align="center"> <B>Sim Min</B> </th><th align="center"> <B>Sim Max</B> </th></TR><TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">ECG</TD><TD style="border-style: none" align="left">numerictype(0, 12, 0) 1 x 21600 </TD><TD style="border-style: none" align="right">892</TD><TD style="border-style: none" align="right">1342</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">ECG_d</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 1 x 21594 </TD><TD style="border-style: none" align="right">-329</TD><TD style="border-style: none" align="right">389</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">ECG_d1</TD><TD style="border-style: none" align="left">numerictype(0, 12, 0) 1 x 7 </TD><TD style="border-style: none" align="right">955</TD><TD style="border-style: none" align="right">955</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">ECG_i</TD><TD style="border-style: none" align="left">numerictype(1, 16, 3) 1 x 21594 </TD><TD style="border-style: none" align="right">-224.25</TD><TD style="border-style: none" align="right">252.25</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">ECG_s</TD><TD style="border-style: none" align="left">numerictype(0, 16, -7) 1 x 21594 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">63616</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">K</TD><TD style="border-style: none" align="left">numerictype(0, 16, 16)</TD><TD style="border-style: none" align="right">0.98162841796875</TD><TD style="border-style: none" align="right">0.98162841796875</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">N</TD><TD style="border-style: none" align="left">numerictype(0, 4, 0)</TD><TD style="border-style: none" align="right">8</TD><TD style="border-style: none" align="right">8</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">Nd</TD><TD style="border-style: none" align="left">numerictype(0, 3, 0)</TD><TD style="border-style: none" align="right">7</TD><TD style="border-style: none" align="right">7</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">QRSint</TD><TD style="border-style: none" align="left">numerictype(0, 16, 11)</TD><TD style="border-style: none" align="right">21.599609375</TD><TD style="border-style: none" align="right">21.599609375</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">RRmin</TD><TD style="border-style: none" align="left">numerictype(0, 7, 0)</TD><TD style="border-style: none" align="right">72</TD><TD style="border-style: none" align="right">72</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">Rpeak</TD><TD style="border-style: none" align="left">numerictype(0, 16, 0) 1 x 21600 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">63616</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">RpeakPos</TD><TD style="border-style: none" align="left">numerictype(0, 15, 0) 1 x 21600 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">21585</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">bd</TD><TD style="border-style: none" align="left">numerictype(1, 2, 0) 1 x 8 </TD><TD style="border-style: none" align="right">-1</TD><TD style="border-style: none" align="right">1</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">bi</TD><TD style="border-style: none" align="left">numerictype(0, 16, 18) 1 x 8 </TD><TD style="border-style: none" align="right">0.125</TD><TD style="border-style: none" align="right">0.125</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">count</TD><TD style="border-style: none" align="left">numerictype(0, 7, 0)</TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">94</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">fmo_1</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 1 x 7 </TD><TD style="border-style: none" align="right">955</TD><TD style="border-style: none" align="right">955</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">fmo_2</TD><TD style="border-style: none" align="left">numerictype(1, 13, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">955</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">i</TD><TD style="border-style: none" align="left">numerictype(0, 15, 0)</TD><TD style="border-style: none" align="right">1</TD><TD style="border-style: none" align="right">21595</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">len</TD><TD style="border-style: none" align="left">numerictype(0, 15, 0)</TD><TD style="border-style: none" align="right">21600</TD><TD style="border-style: none" align="right">21600</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">peak</TD><TD style="border-style: none" align="left">numerictype(0, 16, 0)</TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">63616</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">peakPos</TD><TD style="border-style: none" align="left">numerictype(0, 15, 0)</TD><TD style="border-style: none" align="right">1</TD><TD style="border-style: none" align="right">21585</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">r</TD><TD style="border-style: none" align="left">numerictype(0, 15, 0)</TD><TD style="border-style: none" align="right">1</TD><TD style="border-style: none" align="right">149</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">th</TD><TD style="border-style: none" align="left">numerictype(0, 8, 0)</TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">140</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">x</TD><TD style="border-style: none" align="left">numerictype(0, 12, 0) 1 x 21600 </TD><TD style="border-style: none" align="right">892</TD><TD style="border-style: none" align="right">1342</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">y</TD><TD style="border-style: none" align="left">numerictype(0, 16, 0) 1 x 21594 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">63616</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">zd</TD><TD style="border-style: none" align="left">numerictype(0, 1, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">0</TD></TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" align="left">zd1</TD><TD style="border-style: none" align="left">numerictype(0, 12, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">955</TD></TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" align="left">zi</TD><TD style="border-style: none" align="left">numerictype(0, 1, 0) 8 x 1 </TD><TD style="border-style: none" align="right">0</TD><TD style="border-style: none" align="right">0</TD></TR>
+</TABLE>
+<BR>
+</body>
+</html>

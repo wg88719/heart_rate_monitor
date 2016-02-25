@@ -1,8 +1,8 @@
 close all, clc, clear all
 load('../../data/mit-bih/101m.mat') %load data
 fs=360;
-%ECG = val(1,:); %get input vector from loaded data
-ECG = val(1,1:length(val)/2); %get input vector from loaded data
+ECG = val(1,:); %get input vector from loaded data
+%ECG = val(1,1:length(val)/2); %get input vector from loaded data
 
 figure(1), 
 subplot(4,1,1), plot(ECG), axis tight
@@ -49,6 +49,7 @@ y = ECG_s; %output of the preprocessing stage
 RRmin = 200e-3*fs;
 QRSint=60e-3*fs;
 Pth= 0.7*fs/128 + 4.7;
+K=0.98164; %6214845220;
 
 i = 1; %signal index
 r = 1; %R peaks and positions index
@@ -66,6 +67,9 @@ while (i < length(y))
                 count = count + 1;
                 th(i+1) = th(i);
                 i = i + 1;
+                if(i >= length(y)) 
+                        break;
+                end
         end
         Rpeak(r) = peak;
         RpeakPos(r) = peakPos;
@@ -82,11 +86,11 @@ while (i < length(y))
         %State 3
         while(y(i) <= th(i))
                 i = i + 1;
-                th(i) = th(i-1) * exp(-Pth/fs);
-
-                if(i >= length(y)) %to avoid going out of bounds
+                if(i >= length(y))
                         break;
                 end
+                %th(i) = th(i-1) * exp(-Pth/fs);
+                th(i) = th(i-1) * K;
         end
 end
 
@@ -96,6 +100,7 @@ figure(2),
 plot(y),
 hold on, plot(th,'g'), axis tight
 hold on, scatter(RpeakPos,Rpeak)
+
 %sample = linspace(1,length(ECG),length(ECG));
 %','ECG_d','-ascii','-double')%,'-tabs')
 

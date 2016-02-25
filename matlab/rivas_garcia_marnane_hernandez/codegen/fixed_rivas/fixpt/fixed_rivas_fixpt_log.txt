@@ -1,0 +1,28 @@
+
+Warnings: 
+
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 3, column : 9. Loop index variable 'n' is not a whole number, this is not supported in float to fixed conversion. Please consider re-writing the code to make loop-index variables to be whole numbers.
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 3, column : 9. Loop index variable 'n' is not a whole number, this is not supported in float to fixed conversion. Please consider re-writing the code to make loop-index variables to be whole numbers.
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 3, column : 9. Loop index variable 'n' is not a whole number, this is not supported in float to fixed conversion. Please consider re-writing the code to make loop-index variables to be whole numbers.
+Messages: 
+
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 6, column : 12. Could not find range for expression: 'zeros( 1, fi_toint(len) )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 7, column : 12. Could not find range for expression: 'zeros( 1, fi_toint(len) )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 8, column : 12. Could not find range for expression: 'zeros( 1, fi_toint(len) )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 14, column : 6. Could not find range for expression: '[ 1, zeros( 1, fi_toint(fi_signed(Nd) - fi(1, 0, 1, 0, fm)) ), -1 ]'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 15, column : 11. Could not find range for expression: 'zeros( length( bd ), 1 )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 16, column : 2. Could not find range for expression: 'fmo_1'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 16, column : 9. Could not find range for expression: 'fmo_2'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 17, column : 12. Could not find range for expression: 'fir_s2( bd, ECG( Nd:len ), zd1 )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 24, column : 11. Could not find range for expression: '(fi_div(fi(1, 0, 1, 0, fm), N))*fi(ones( 1, fi_toint(N) ), 0, 1, 0, fm)'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 25, column : 11. Could not find range for expression: 'zeros( length( bi ), 1 )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 26, column : 12. Could not find range for expression: 'fir_s3( bi, ECG_d, zi )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 30, column : 14. Could not find range for expression: 'ECG_i .* ECG_i'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 38, column : 5. Could not find range for expression: 'ECG_s'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fixed_rivas.m, line : 56, column : 17. Could not find range for expression: 'y( i )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 2, column : 14. Could not find range for expression: 'zeros( size( x ) )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 4, column : 13. Could not find range for expression: '[ x( n ); z( 1:end - 1 ) ]'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 2, column : 14. Could not find range for expression: 'zeros( size( x ) )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 4, column : 13. Could not find range for expression: '[ x( n ); z( 1:end - 1 ) ]'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 2, column : 14. Could not find range for expression: 'zeros( size( x ) )'
+File: /home/danielrb/Dropbox/EE6103/heart_rate_monitor/matlab/rivas_garcia_marnane_hernandez/fir.m, line : 4, column : 13. Could not find range for expression: '[ x( n ); z( 1:end - 1 ) ]'
