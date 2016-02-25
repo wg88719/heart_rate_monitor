@@ -2,7 +2,7 @@ function [RpeakPos Rpeak ECG_d ECG_i ECG_s] = fixed_rivas(ECG)
 %function [RpeakPos Rpeak ] = fixed_rivas(ECG)
 %ECG has to be long 21600 = 1 minute of recordings
 %initaliazing
-len=21600;
+len=21600/4;
 Nd=7;
 ECG_d=zeros(1,len-Nd+1);
 ECG_i=zeros(1,len-Nd+1);

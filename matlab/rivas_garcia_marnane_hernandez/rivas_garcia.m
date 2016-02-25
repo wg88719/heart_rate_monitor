@@ -2,7 +2,7 @@ close all, clc, clear all
 load('../../data/mit-bih/101m.mat') %load data
 fs=360;
 ECG = val(1,:); %get input vector from loaded data
-%ECG = val(1,1:length(val)/2); %get input vector from loaded data
+ECG = ECG(1,1:length(ECG)/4);
 
 figure(1), 
 subplot(4,1,1), plot(ECG), axis tight
@@ -54,6 +54,7 @@ K=0.98164; %6214845220;
 i = 1; %signal index
 r = 1; %R peaks and positions index
 th(1) = 0; %initial threshold
+
 
 while (i < length(y))
         %State 1

@@ -4,7 +4,7 @@ close all, clc, clear all
 load('../../data/mit-bih/101m.mat')
 fs=360;
 %only 30 secs
-ECG = val(1,1:length(val)/2); %get input vector from loaded data
+ECG = val(1,1:length(val)/4); %get input vector from loaded data
 
 figure(1), 
 subplot(5,1,1), plot(ECG), axis tight

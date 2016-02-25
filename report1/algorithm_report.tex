@@ -29,8 +29,8 @@ The actual detection stage uses a double threshold technique which is applied bo
 The implementation found in \cite{hooman} was the starting basis for the implementation I developed. I decided to simplify the implementation and use only one type of band-path IIR filter for filtering the noise. The detection stage was completely re-done with a more simple approach.
 
 \begin{figure}%[p]
-        \centering
-        \includegraphics[scale=0.4]{./figs/pan_tompkins30s.pdf}
+        %\centering
+        \centerline{\includegraphics[scale=0.6]{./figs/pantompkins.png}}
         \caption{Signal at the various steps of the Pan Tompkins Algorithm}
         \label{fig:pan}
 \end{figure}
@@ -49,24 +49,33 @@ Detection is based on adaptive thresholding. There is only one threshold in this
 
 \subsection{Implementation}
 
-The novel algorithm was implemented on matlab keeping true to it's real time nature by analyzing one sample after the other. 
+The novel algorithm was implemented on matlab keeping true to it's real time nature by analyzing one sample after the other. The initial implementation was written in floating point arithmetics and testes with the MIT-DIB database. After validating the results, the script was converted into fixed-point arithmetics manually by with the help of the fixed point toolbox of Matlab. This toolbox automatically decides the best word-length and the length for the fraction part for each variable. 
 
 \begin{figure}%[p]
         \centering
-        \includegraphics[scale=0.4]{./figs/rivas30.pdf}
-        \caption{Signal at the various steps of the Proposed Algorithm}
+        %\raggedleft
+        \centerline{\includegraphics[scale=0.6]{./figs/comparison.png}}
+        \caption{Comparison of floating point vs. optimal fixed point}
         \label{fig:rivas}
 \end{figure}
 
 \begin{figure}%[p]
-        \centering
-        \includegraphics[scale=0.4]{./figs/rivas_closeup.pdf}
-        \caption{Close up of the final output signal}
+        %\centering
+        \centerline{\includegraphics[scale=0.4]{./figs/rivas_closeup.png}}
+        \caption{Close up of the final output signal with the adaptive threshold}
         \label{fig:rivasclose}
+\end{figure}
+
+\begin{figure}%[p]
+        %\centering
+        \centerline{\includegraphics[scale=0.6]{./figs/fxpt_errors1.png}}
+        \caption{Absolute Errors of the optimal fixed point Algorithm}
+        \label{fig:errors}
 \end{figure}
 
 \section{Future Work} %RTL 
 
+\newpage 
 \bibliographystyle{plain}
 \bibliography{./biblio}
 
