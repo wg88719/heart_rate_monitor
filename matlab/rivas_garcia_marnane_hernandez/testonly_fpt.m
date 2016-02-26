@@ -5,7 +5,13 @@ fs=360;
 ECG = val(1,:); %get input vector from loaded data
 ECG = ECG(1,1:length(ECG)/4);
 
-[Rpos_fpt R_fpt ecgd_fpt ecgi_fpt ecgs_fpt] = fixed_rivas_fixpt(ECG);
+fm = fimath( 'RoundingMethod', 'Floor', 'OverflowAction', 'Wrap', 'ProductMode', 'FullPrecision', 'SumMode', 'FullPrecision' );
+NB=11;
+NS=15;
+
+ECG_in = fi( ECG, 0, NB, 0, fm );
+
+[Rpos_fpt R_fpt ecgd_fpt ecgi_fpt ecgs_fpt] = fixed_rivas_fixpt(ECG_in);
 
 Rpos_fpt = getridofzeros(Rpos_fpt);
 R_fpt= getridofzeros(R_fpt);

@@ -16,6 +16,8 @@ The aim for this project is to analyse and implement a heart rate monitor on an 
 
 Two algorithms were analysed and implemented for reasons that will be explained throughout this report. Initially I worked with the famous Pan Tompkins algorithm since it is the foundation for many other algorithms. Implementing it on software is quite straightforward but since the final goal of this project is to implement it on hardware I ended deciding that it was not fit for this. 
 
+Both the algorithms and the final fixed point implementation were tested using the MIT-DIB database \cite{mit} available on the physionet website \cite{physionet}. One minute of samples was used in each but keep in mind that the plots in this report show only 15 seconds of samples for the sake for clarity.
+
 \section{Pan Tompkins Algorithm}
 
 \subsection{Description of the algorithm}
@@ -47,6 +49,13 @@ Preprocessing is made first by a differentiator, followed by an integrator, fini
 
 Detection is based on adaptive thresholding. There is only one threshold in this case and it is only applied to the final signal from the preprocessing stage but it adapts to the signal. As mentioned before the detector is a FSM with three states. There is a counter running and it's value is the decisive value in two of the states. During the first state the FSM looks for the highest value in the signal which is then saved as a peak, it goes to the next state when the value of the counter is higher than the minimum feasible RR interval (200ms) plus the standard duration of the QRS complex (60ms). Then the counter is set to a value equal to the current signal index minus the index of the previously found peak. The second state simply keeps the counter going  until the value of the counter is higher than the minimum RR interval. This is where the threshold is set to the average value of all the previous peaks. In the final state the FSM looks for a value of the signal higher than the threshold, in the meantime the threshold is decreased exponentially. 
 
+\begin{figure}%[p]
+        %\centering
+        \centerline{\includegraphics[scale=0.4]{./figs/rivas_closeup.png}}
+        \caption{Close up of the final output signal with the adaptive threshold}
+        \label{fig:rivasclose}
+\end{figure}
+
 \subsection{Implementation}
 
 The novel algorithm was implemented on matlab keeping true to it's real time nature by analyzing one sample after the other. The initial implementation was written in floating point arithmetics and testes with the MIT-DIB database. After validating the results, the script was converted into fixed-point arithmetics manually by with the help of the fixed point toolbox of Matlab. This toolbox automatically decides the best word-length and the length for the fraction part for each variable. 
@@ -59,12 +68,22 @@ The novel algorithm was implemented on matlab keeping true to it's real time nat
         \label{fig:rivas}
 \end{figure}
 
-\begin{figure}%[p]
-        %\centering
-        \centerline{\includegraphics[scale=0.4]{./figs/rivas_closeup.png}}
-        \caption{Close up of the final output signal with the adaptive threshold}
-        \label{fig:rivasclose}
-\end{figure}
+\begin{table}
+        \centering
+        \begin{tabular}{l l c c }
+                Signal/Variable & Signed/Unsigned & Wordlength & Fraction length \\
+                \hline
+                Input Signal & Unsigned & 11 & 0 \\
+                Differential Output & Signed & 12 & 0 \\
+                Integrator Output & Signed & 15 & 3 \\
+                Squaring Output & Unsigned & 24 & 0 \\
+                count & Unsigned & 7 & 0 \\
+                R peak values & unsigned & 24 & 0 \\
+                R peak position values & unsigned & 15 & 0 \\
+        \end{tabular}
+        \caption{Optimal Word and Fraction lengths for important variables}
+        \label{tab:optwords}
+\end{table}
 
 \begin{figure}%[p]
         %\centering
@@ -72,6 +91,33 @@ The novel algorithm was implemented on matlab keeping true to it's real time nat
         \caption{Absolute Errors of the optimal fixed point Algorithm}
         \label{fig:errors}
 \end{figure}
+
+
+\begin{table}
+        \centering
+        \begin{tabular}{l l c c }
+                Signal/Variable & Signed/Unsigned & Wordlength & Fraction length \\
+                \hline
+                Input Signal & Unsigned & 11 & 0 \\
+                Differential Output & Signed & 12 & 0 \\
+                Integrator Output & Signed & 12 & 0 \\
+                Squaring Output & Unsigned & 24 & 0 \\
+                count & Unsigned & 7 & 0 \\
+                R peak values & unsigned & 24 & 0 \\
+                R peak position values & unsigned & 15 & 0 \\
+        \end{tabular}
+        \caption{Used Word and Fraction lengths for important variables}
+        \label{tab:words}
+\end{table}
+\begin{figure}%[p]
+        %\centering
+        \centerline{\includegraphics[scale=0.6]{./figs/fxpt_errors2.png}}
+        \caption{Absolute Errors of the used fixed point Algorithm}
+        \label{fig:errors}
+\end{figure}
+
+
+
 
 \section{Future Work} %RTL 
 

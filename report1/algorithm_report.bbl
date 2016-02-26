@@ -1,5 +1,16 @@
 \begin{thebibliography}{1}
 
+\bibitem{mit}
+Moody GB and Mark RG.
+\newblock The impact of the mit-bih arrhythmia database.
+\newblock {\em IEEE Eng in Med and Biol}, 20(3):45--50, May-June 2001.
+
+\bibitem{physionet}
+AL~Goldberger, LAN Amaral, L~Glass, JM~Hausdorff, PCh Ivanov, RG~Mark,
+  JE~Mietus, GB~Moody, C-K Peng, and HE~Stanley.
+\newblock Physiobank, physiotoolkit, and physionet: Components of a new
+  research resource for complex physiologic signals, June 2000.
+
 \bibitem{rivas}
 Raquel Gutiérrez-Rivas, Jesùs Garcìa, William~P. Marnane, and Alvaro
   Hernàndez.

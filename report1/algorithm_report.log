@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.12.31)  25 FEB 2016 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.12.31)  26 FEB 2016 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -155,32 +155,43 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: ./figs/pantompkins.png Graphic file (type png)
 
 <use ./figs/pantompkins.png>
-Package pdftex.def Info: ./figs/pantompkins.png used on input line 33.
+Package pdftex.def Info: ./figs/pantompkins.png used on input line 35.
 (pdftex.def)             Requested size: 615.20313pt x 295.40588pt.
  [2 <./figs/pantompkins.png (PNG copy)>]
-<./figs/comparison.png, id=14, 1025.33063pt x 478.78876pt>
-File: ./figs/comparison.png Graphic file (type png)
-
-<use ./figs/comparison.png>
-Package pdftex.def Info: ./figs/comparison.png used on input line 57.
-(pdftex.def)             Requested size: 615.20313pt x 287.27547pt.
-
-<./figs/rivas_closeup.png, id=15, 1025.33063pt x 478.78876pt>
+<./figs/rivas_closeup.png, id=14, 1025.33063pt x 478.78876pt>
 File: ./figs/rivas_closeup.png Graphic file (type png)
 
 <use ./figs/rivas_closeup.png>
-Package pdftex.def Info: ./figs/rivas_closeup.png used on input line 64.
+Package pdftex.def Info: ./figs/rivas_closeup.png used on input line 54.
 (pdftex.def)             Requested size: 410.12498pt x 191.5121pt.
+
+<./figs/comparison.png, id=15, 1025.33063pt x 478.78876pt>
+File: ./figs/comparison.png Graphic file (type png)
+
+<use ./figs/comparison.png>
+Package pdftex.def Info: ./figs/comparison.png used on input line 66.
+(pdftex.def)             Requested size: 615.20313pt x 287.27547pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 73.
 
 <./figs/fxpt_errors1.png, id=16, 1025.33063pt x 478.78876pt>
 File: ./figs/fxpt_errors1.png Graphic file (type png)
 
 <use ./figs/fxpt_errors1.png>
-Package pdftex.def Info: ./figs/fxpt_errors1.png used on input line 71.
+Package pdftex.def Info: ./figs/fxpt_errors1.png used on input line 90.
 (pdftex.def)             Requested size: 615.20313pt x 287.27547pt.
- [3] [4 <./figs/comparison.png (PNG copy)> <./figs/rivas_closeup.png (PNG copy)
+
+<./figs/fxpt_errors2.png, id=17, 1025.33063pt x 478.78876pt>
+File: ./figs/fxpt_errors2.png Graphic file (type png)
+
+<use ./figs/fxpt_errors2.png>
+Package pdftex.def Info: ./figs/fxpt_errors2.png used on input line 114.
+(pdftex.def)             Requested size: 615.20313pt x 287.27547pt.
+ [3] [4 <./figs/rivas_closeup.png (PNG copy)> <./figs/comparison.png (PNG copy)
 >] [5 <./figs/fxpt_errors1.png (PNG copy)>]
-(./algorithm_report.bbl
+[6 <./figs/fxpt_errors2.png (PNG copy)>] (./algorithm_report.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -189,24 +200,29 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no   in font cmr10!
-) [6] (./algorithm_report.aux) ) 
+) [7]
+(./algorithm_report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1558 strings out of 493054
- 22254 string characters out of 6140585
- 82205 words of memory out of 5000000
- 5074 multiletter control sequences out of 15000+600000
+ 1571 strings out of 493054
+ 22473 string characters out of 6140585
+ 86219 words of memory out of 5000000
+ 5086 multiletter control sequences out of 15000+600000
  7933 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,1089b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on algorithm_report.pdf (6 pages, 257631 bytes).
+ 37i,7n,23p,1089b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on algorithm_report.pdf (7 pages, 304624 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
